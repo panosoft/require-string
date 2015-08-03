@@ -1,0 +1,19 @@
+{
+  "name": "@panosoft/require-string",
+  "version": "0.0.0",
+  "description": "Require js file from memory instead of file system.",
+  "repository": "panosoft/require-string",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  }
+}
