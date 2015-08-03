@@ -1,6 +1,6 @@
 {
   "name": "@panosoft/require-string",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Require js file from memory instead of file system.",
   "repository": "panosoft/require-string",
   "main": "lib/index.js",
