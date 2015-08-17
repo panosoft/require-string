@@ -2,19 +2,19 @@
 
 Require a module from a string in memory instead of loading it from the file system.
 
-[![npm](https://img.shields.io/npm/v/require-string.svg)]()
-[![npm](https://img.shields.io/npm/l/require-string.svg)]()
-[![Travis](https://img.shields.io/travis/panosoft/require-string.svg)]()
-[![David](https://img.shields.io/david/panosoft/require-string.svg)]()
-[![npm](https://img.shields.io/npm/dm/require-string.svg)]()
+[![npm version](https://img.shields.io/npm/v/require-string.svg)](https://www.npmjs.com/package/require-string)
+[![npm license](https://img.shields.io/npm/l/require-string.svg)](https://www.npmjs.com/package/require-string)
+[![Travis](https://img.shields.io/travis/panosoft/require-string.svg)](https://travis-ci.org/panosoft/require-string)
+[![David](https://img.shields.io/david/panosoft/require-string.svg)](https://david-dm.org/panosoft/require-string)
+[![npm downloads](https://img.shields.io/npm/dm/require-string.svg)](https://www.npmjs.com/package/require-string)
 
-# Installation
+## Installation
 
-```
+```sh
 npm install @panosoft/require-string
 ```
 
-# Usage
+## Usage
 
 ```js
 var requireString = require('@panosoft/require-string');
@@ -24,22 +24,28 @@ var module = requireString('module.exports = {number: 1}');
 console.log(module.number); // 1
 ```
 
-# API
+## API
 
-## requireString( content [, filename] )
+- [`requireString`](#requireString)
+
+---
+
+<a name="requireString"/>
+#### requireString ( content [, filename] )
 
 Works just like Node's `require()` except it loads a module from a string instead of reading it from the file system.
 
 A `filename` can be supplied which provides a base path from which relative `require()` paths in the string module can be resolved.
 
-Returns the string modules `module.exports` object just like Node's `require()`.
+Returns the string module's `module.exports` object just like Node's `require()`.
 
-### Arguments
+__Arguments__
 
 - `content` - The string to load as a module.
 - `filename` - The filename to apply to the module. This is used in resolving relative paths passed to `require()` within the string module. Defaults to `''` which results in relative `require()` paths being resolved relative to the current working directory of the parent Node process.
 
-### Example
+__Example__
+
 Assuming we have the following file locally, `path/to/relative/index.js`:
 
 ```js
@@ -59,5 +65,6 @@ var moduleString = ''
   + ' module.exports = relativeModule.resolve;';
 
 var module = requireString(moduleString, filename);
+
 console.log(module('.')); // current working directory
 ```
