@@ -1,6 +1,6 @@
 {
   "name": "@panosoft/require-string",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Require a module from a string in memory instead of loading it from the file system.",
   "repository": "panosoft/require-string",
   "main": "lib/index.js",
