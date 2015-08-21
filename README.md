@@ -2,11 +2,11 @@
 
 Require a module from a string in memory instead of loading it from the file system.
 
-[![npm version](https://img.shields.io/npm/v/require-string.svg)](https://www.npmjs.com/package/require-string)
-[![npm license](https://img.shields.io/npm/l/require-string.svg)](https://www.npmjs.com/package/require-string)
+[![npm version](https://img.shields.io/npm/v/@panosoft/require-string.svg)](https://www.npmjs.com/package/@panosoft/require-string)
+[![npm license](https://img.shields.io/npm/l/@panosoft/require-string.svg)](https://www.npmjs.com/package/@panosoft/require-string)
 [![Travis](https://img.shields.io/travis/panosoft/require-string.svg)](https://travis-ci.org/panosoft/require-string)
 [![David](https://img.shields.io/david/panosoft/require-string.svg)](https://david-dm.org/panosoft/require-string)
-[![npm downloads](https://img.shields.io/npm/dm/require-string.svg)](https://www.npmjs.com/package/require-string)
+[![npm downloads](https://img.shields.io/npm/dm/@panosoft/require-string.svg)](https://www.npmjs.com/package/@panosoft/require-string)
 
 ## Installation
 
