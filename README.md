@@ -30,7 +30,7 @@ console.log(module.number); // 1
 
 ---
 
-<a name="requireString"/>
+<a name="requireString"></a>
 #### requireString ( content [, filename] )
 
 Works just like Node's `require()` except it loads a module from a string instead of reading it from the file system.
